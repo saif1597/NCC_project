@@ -10,6 +10,7 @@ body{
     font-family: 'Poppins', sana-serif;
     background: #1c2325;
     width: 100vw;
+    overflow: hidden;
 }
 
 a{
@@ -79,6 +80,7 @@ header{
 
 .menu .menu_item a{
     color: #f1f1f1;
+
 }
 
 .toggleMenu{
@@ -97,3 +99,62 @@ header{
     border-radius: 5px;
     border-bottom-right-radius: 20px;
 }  
+.closebtn{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+
+    header{
+        padding: 20px 40px;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        width: 50%;
+        height: 100vh;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .menu.show{
+        right: 0%;    
+    }
+
+    .menu .menu_item{
+        margin: 20px 0;
+    }
+
+    .menu .menu_item a{
+        font-size: 20px;
+    }
+
+    .toggleMenu{
+        display:block !important ;
+    }
+
+    .closebtn{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 10%;
+        left: 5%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .closebtn i{
+        font-size: 20px;
+        animation: spin 0.5s infinite;
+    }
+}
