@@ -10,7 +10,7 @@ body{
     font-family: 'Poppins', sana-serif;
     background: #1c2325;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a{
@@ -32,6 +32,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 40px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
 
 }
 
@@ -103,6 +107,96 @@ header{
     display: none;
 }
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.bgVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 120px;
+    z-index: 50;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content p{
+    font-size: 2.5rem;
+    color: rgb(231, 10, 10);
+    text-align: center;
+}
+
+.content p span{
+    font-size: 3rem;
+    color: yellow;
+}
+
+.content .dropIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10%;
+    animation: upside 1.2s infinite;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content .dropIcon i{
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes upside{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
 @media only screen and (max-width:600px){
 
     header{
@@ -156,5 +250,18 @@ header{
     .closebtn i{
         font-size: 20px;
         animation: spin 0.5s infinite;
+    }
+
+    .content{
+        width: 90%;
+    }
+    
+    .content p{
+        font-size: 1.75rem;
+    }
+    
+    .content p span{
+        font-size: 2.5rem;
+        color: yellow;
     }
 }
