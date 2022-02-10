@@ -184,6 +184,81 @@ section{
     color: white;
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infocontent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+.infocontent p{
+    font-size: 2.5rem;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+.infocontent p span{
+    display: block;
+    font-size: 3rem;
+}
+
+.infocontent .icons{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+
+.infocontent .icons i{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #888;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.infocontent .icons i:hover{
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+}
+
+
+
+.infocard{
+    width: 100%;
+    margin-top: 80px;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.infocard::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    width: 240px;
+    min-width: 240px;
+    height: 300px;
+    background: #00ff15;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
 @keyframes upside{
     0%{
         transform: translateY(0px);
