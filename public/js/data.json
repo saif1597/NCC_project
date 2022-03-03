@@ -1,0 +1,44 @@
+[
+    {
+        "id" :1,
+        "name" : "Double bar",
+        "imgsrc" : "../img/dumbells.jpg",
+        "price" : 60,
+        "description" : "nice Double Bar"
+    },
+    {
+        "id" :2,
+        "name" : "Main hall",
+        "imgsrc" : "../img/dumbells.jpg",
+        "price" : 60,
+        "description" : "nice Double Bar"
+    },
+    {
+        "id" :3,
+        "name" : "Main hall",
+        "imgsrc" : "../img/dumbells.jpg",
+        "price" : 60,
+        "description" : "nice Double Bar"
+    },
+    {
+        "id" :4,
+        "name" : "Main hall",
+        "imgsrc" : "../img/dumbells.jpg",
+        "price" : 60,
+        "description" : "nice Double Bar"
+    },
+    {
+        "id" :5,
+        "name" : "Main hall",
+        "imgsrc" : "../img/dumbells.jpg",
+        "price" : 60,
+        "description" : "nice Double Bar"
+    },
+    {
+        "id" :6,
+        "name" : "Main hall",
+        "imgsrc" : "../img/dumbells.jpg",
+        "price" : 60,
+        "description" : "nice Double Bar"
+    }
+]
